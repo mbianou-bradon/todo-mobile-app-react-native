@@ -31,14 +31,12 @@ function App(): JSX.Element {
         <SafeAreaView>
           <StatusBar/>
           <View style={styles.mainView}>
-          <AddTodoInput/>
-
-              <ScrollView>
-              
-              <TodoComponent />
-                  
-                
-              </ScrollView>
+            <ScrollView showsVerticalScrollIndicator={false}>
+              <AddTodoInput/>
+              <>
+                <TodoComponent />    
+              </>
+            </ScrollView>
             </View>
             
         </SafeAreaView>

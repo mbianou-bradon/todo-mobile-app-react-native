@@ -19,11 +19,11 @@ const handleSubmit = () => {
     return(
         <>
         <View>
-            <Text style={{fontSize:30, fontWeight: "800", textAlign:"center", color:"#124247"}}>
+            <Text style={{fontSize:30, fontWeight: "800", textAlign:"center", color:"#124247", marginBottom:15}}>
                 Plan Your Day
             </Text>
         </View>
-        <View>
+        <View style={{marginBottom:40}}>
             <TextInput style={styles.textInput} placeholder='Task Title' onChangeText={(title)=> setTodoTitle(title)}/>
             <TextInput id="todoDesc" style={styles.textInput} placeholder='Task Description' onChangeText={(desc)=> setTodoDescription(desc)}/>
             <Pressable style={styles.pressableStyle} onPress={handleSubmit}>
